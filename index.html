@@ -6,9 +6,14 @@
 </head>
 <body>
 
-<h1 id="h1">hei</h1>
+<button id="btn">Klikk</button>
+<script src="dictionary_module.mjs"></script>
+
 <script>
-    import dictionary_module from "./dictionary_module.mjs";
+    let btn = document.getElementById("btn");
+    btn.addEventListener("click", function(e){
+        btn.innerHTML = dictionary.en;
+    })
 </script>
 </body>
 </html>
